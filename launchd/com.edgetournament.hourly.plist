@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
   <key>Label</key><string>com.edgetournament.hourly</string>
-  <key>ProgramArguments</key><array><string>/Users/floriankotulla/Sites/edge-tournament/scripts/hourly.sh</string></array>
-  <key>WorkingDirectory</key><string>/Users/floriankotulla/Sites/edge-tournament</string>
+  <key>ProgramArguments</key><array><string>__HOME__/Sites/edge-tournament/scripts/hourly.sh</string></array>
+  <key>WorkingDirectory</key><string>__HOME__/Sites/edge-tournament</string>
   <key>StartCalendarInterval</key><dict><key>Minute</key><integer>3</integer></dict>
   <key>RunAtLoad</key><true/>
-  <key>StandardOutPath</key><string>/Users/floriankotulla/Sites/edge-tournament/state/hourly.log</string>
-  <key>StandardErrorPath</key><string>/Users/floriankotulla/Sites/edge-tournament/state/hourly.err.log</string>
+  <key>StandardOutPath</key><string>__HOME__/Sites/edge-tournament/state/hourly.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/Sites/edge-tournament/state/hourly.err.log</string>
 </dict></plist>
