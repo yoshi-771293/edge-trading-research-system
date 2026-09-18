@@ -32,6 +32,8 @@ class Result:
     exposure: pd.Series
     weights: pd.DataFrame
     total_costs: float
+    equity_paper: pd.Series = None      # same decisions, NO spread and NO commission
+    paper_twr: pd.Series = None         # its deposit-neutral index
     killed_at: pd.Timestamp | None = None
     deposits: float = 0.0
 
@@ -141,11 +143,11 @@ def execute(bars: dict[str, pd.DataFrame], targets: pd.DataFrame, universe: pd.D
          else bars[s]["half_spread"].reindex(idx).values if s in bars and "half_spread" in bars[s]
          else np.full(len(idx), np.nan)) for s in syms])
 
-    cash = float(start_equity); cash_g = float(start_equity)
-    units = np.zeros(m); units_g = np.zeros(m)
+    cash = float(start_equity); cash_g = float(start_equity); cash_p = float(start_equity)
+    units = np.zeros(m); units_g = np.zeros(m); units_p = np.zeros(m)
     last_close = np.full(m, np.nan)
     pending = None
-    eq = np.empty(n); eqg = np.empty(n); contrib = np.empty(n); expo = np.empty(n)
+    eq = np.empty(n); eqg = np.empty(n); eqp = np.empty(n); contrib = np.empty(n); expo = np.empty(n)
     twr = np.empty(n); W = np.zeros((n, m))
     trades = []
     contributed = float(start_equity)
@@ -160,7 +162,7 @@ def execute(bars: dict[str, pd.DataFrame], targets: pd.DataFrame, universe: pd.D
         dep = 0.0
         if monthly_deposit and t > 0 and months[t] != months[t - 1]:
             dep = float(monthly_deposit)
-            cash += dep; cash_g += dep
+            cash += dep; cash_g += dep; cash_p += dep
             contributed += dep; deposits_total += dep
         # 2. delisting: force-exit anything that stopped trading
         for j in np.where(units > 0)[0]:
@@ -169,6 +171,7 @@ def execute(bars: dict[str, pd.DataFrame], targets: pd.DataFrame, universe: pd.D
                 q = -units[j]
                 cash += -q * px; units[j] = 0.0
                 cash_g += -q * px; units_g[j] = 0.0
+                cash_p += -q * last_close[j]; units_p[j] = 0.0
                 trades.append({"time": idx[t], "symbol": syms[j], "side": "DELIST", "usd": abs(q * px),
                                "units": q, "fill": px, "ref_open": last_close[j], "fee": 0.0,
                                "style": "forced", "slippage": abs(q) * abs(px - last_close[j])})
@@ -185,6 +188,7 @@ def execute(bars: dict[str, pd.DataFrame], targets: pd.DataFrame, universe: pd.D
             for f in fills:
                 j = f["j"]
                 units_g[j] += f["units"]; cash_g -= f["units"] * f["fill"]   # gross twin: same fill, no fee
+                units_p[j] += f["units"]; cash_p -= f["units"] * o[j]         # paper twin: reference price, no fee
                 total_costs += f["fee"] + f["slippage"]
                 trades.append({"time": idx[t], "symbol": syms[j], **{k: f[k] for k in
                               ("side", "usd", "units", "fill", "ref_open", "fee", "slippage", "style")}})
@@ -199,6 +203,7 @@ def execute(bars: dict[str, pd.DataFrame], targets: pd.DataFrame, universe: pd.D
         hold = units * np.nan_to_num(last_close)
         equity = cash + hold.sum()
         eq[t] = equity; eqg[t] = cash_g + (units_g * np.nan_to_num(last_close)).sum()
+        eqp[t] = cash_p + (units_p * np.nan_to_num(last_close)).sum()
         contrib[t] = contributed
         expo[t] = hold.sum() / equity if equity > 0 else 0.0
         W[t] = hold / equity if equity > 0 else 0.0
@@ -223,7 +228,11 @@ def execute(bars: dict[str, pd.DataFrame], targets: pd.DataFrame, universe: pd.D
 
     equity_s = pd.Series(eq, index=idx, name="equity")
     contrib_s = pd.Series(contrib, index=idx, name="contributed")
+    paper_s = pd.Series(eqp, index=idx, name="paper")
+    _dep = contrib_s.diff().fillna(0.0)
+    paper_twr = ((paper_s - _dep) / paper_s.shift(1)).fillna(1.0).cumprod()
     return Result(equity=equity_s, equity_gross=pd.Series(eqg, index=idx, name="gross"),
+                  equity_paper=paper_s, paper_twr=paper_twr,
                   contributed=contrib_s, profit=(equity_s - contrib_s).rename("profit"),
                   twr=pd.Series(twr, index=idx, name="twr"),
                   trades=pd.DataFrame(trades, columns=TRADE_COLS) if trades else pd.DataFrame(columns=TRADE_COLS),

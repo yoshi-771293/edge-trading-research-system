@@ -49,6 +49,8 @@ class Result:
     exposure: pd.Series
     weights: pd.DataFrame
     total_costs: float
+    equity_paper: pd.Series = None      # same decisions, NO spread and NO commission
+    paper_twr: pd.Series = None         # its deposit-neutral index
     killed_at: pd.Timestamp | None = None
     n_stops: int = 0
     n_targets: int = 0
@@ -98,7 +100,7 @@ def execute(bars: dict[str, pd.DataFrame], signals: pd.DataFrame, universe: pd.D
     UNI = (universe.reindex(index=idx, columns=syms).fillna(False)
            if universe is not None else pd.DataFrame(True, index=idx, columns=syms))
 
-    cash = cash_g = float(start_equity)
+    cash = cash_g = cash_p = float(start_equity)
     pos: dict[str, dict] = {}               # symbol -> signed units, stop, target, entry
     last_close: dict[str, float] = {}       # last FINITE close per symbol: a gap must not poison equity
 
@@ -112,7 +114,7 @@ def execute(bars: dict[str, pd.DataFrame], signals: pd.DataFrame, universe: pd.D
     contributed = float(start_equity)
     twr = 1.0; peak = 1.0; prev_eq = float(start_equity)
     killed_at = None; total_costs = 0.0
-    eq = []; eqg = []; contrib = []; expo = []; twrs = []; W = []
+    eq = []; eqg = []; eqp = []; contrib = []; expo = []; twrs = []; W = []
     trades = []
     months = idx.to_period("M")
     n_stop = n_tgt = n_capped = 0
@@ -124,11 +126,12 @@ def execute(bars: dict[str, pd.DataFrame], signals: pd.DataFrame, universe: pd.D
 
     def _close_pos(sym, p, price, when, reason, ref):
         """Exit a position of signed units at `price`. Long sells, short buys back."""
-        nonlocal cash, cash_g, total_costs
+        nonlocal cash, cash_g, cash_p, total_costs
         u = p["units"]
         fee = cm.commission(abs(u) * price)
         cash += u * price - fee               # long: +proceeds; short (u<0): pays to buy back
         cash_g += u * price
+        cash_p += u * ref                     # paper twin: the reference price, no friction
         total_costs += fee + abs(u) * abs(ref - price)
         trades.append({"time": when, "symbol": sym, "side": "SELL" if u > 0 else "BUY", "reason": reason,
                        "usd": abs(u) * price, "units": -u, "fill": price, "ref_open": ref,
@@ -160,7 +163,7 @@ def execute(bars: dict[str, pd.DataFrame], signals: pd.DataFrame, universe: pd.D
         dep = 0.0
         if monthly_deposit and t > 0 and months[t] != months[t - 1]:
             dep = float(monthly_deposit)
-            cash += dep; cash_g += dep; contributed += dep
+            cash += dep; cash_g += dep; cash_p += dep; contributed += dep
 
         # 2. stops and targets on existing positions
         for sym in list(pos):
@@ -204,6 +207,7 @@ def execute(bars: dict[str, pd.DataFrame], signals: pd.DataFrame, universe: pd.D
             fee = cm.commission(notional)
             cash -= units * px + fee              # short: units<0, cash rises by the sale
             cash_g -= units * px
+            cash_p -= units * float(o)            # paper twin: filled at the reference open
             total_costs += fee + abs(units) * abs(px - o)
             risk_taken.append(abs(units) * dist / equity_open if equity_open > 0 else 0.0)
             trades.append({"time": when, "symbol": sym, "side": "BUY" if side > 0 else "SELL", "reason": "entry",
@@ -229,6 +233,7 @@ def execute(bars: dict[str, pd.DataFrame], signals: pd.DataFrame, universe: pd.D
         equity = cash + sum(held.values())
         gross = cash_g + sum(held.values())
         eq.append(equity); eqg.append(gross); contrib.append(contributed)
+        eqp.append(cash_p + sum(pos[s2]["units"] * (last_close.get(s2, 0.0) or 0.0) for s2 in pos))
         expo.append(sum(abs(x) for x in held.values()) / equity if equity > 0 else 0.0)
         W.append({s: (held.get(s, 0.0) / equity if equity > 0 else 0.0) for s in syms})
         if prev_eq > 0:
@@ -256,8 +261,12 @@ def execute(bars: dict[str, pd.DataFrame], signals: pd.DataFrame, universe: pd.D
 
     eq_s = pd.Series(eq, index=idx, name="equity")
     con_s = pd.Series(contrib, index=idx, name="contributed")
+    paper_s = pd.Series(eqp, index=idx, name="paper")
+    _dep = con_s.diff().fillna(0.0)
+    paper_twr = ((paper_s - _dep) / paper_s.shift(1)).fillna(1.0).cumprod()
     n_entries = int(sum(1 for x in trades if x["reason"] == "entry"))
     return Result(equity=eq_s, equity_gross=pd.Series(eqg, index=idx, name="gross"),
+                  equity_paper=paper_s, paper_twr=paper_twr,
                   contributed=con_s, profit=(eq_s - con_s).rename("profit"),
                   twr=pd.Series(twrs, index=idx, name="twr"),
                   trades=pd.DataFrame(trades, columns=TRADE_COLS) if trades else pd.DataFrame(columns=TRADE_COLS),

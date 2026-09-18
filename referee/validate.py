@@ -9,7 +9,14 @@ from scipy.stats import norm, skew, kurtosis
 MIN_TRADES = 100
 TRIP_SHARPE = 3.0
 TRIP_SINGLE_BAR = 0.15
-TRIP_STREAK = 10
+TRIP_STREAK = 10                # legacy floor; the live threshold scales with sample size
+STREAK_MARGIN = 7               # days above the expected longest run before we call it a bug.
+                                # Calibrated by simulation: the threshold then sits at
+                                # about the 99.9th percentile of the longest run in pure
+                                # noise (17/18/20 days at n=500/2,000/5,000), so the rule
+                                # fires roughly once in a thousand honest runs instead of
+                                # the 62% of the time the old fixed 10 did.
+ROLLING_SHARPE_SIGMAS = 4.0     # how far a window may sit above the strategy's own level
 SINGLE_REGIME_SHARE = 0.80
 
 
@@ -57,6 +64,19 @@ class Trip:
     reason: str = ""
 
 
+def streak_threshold(n: int, p: float = 0.5, margin: int = STREAK_MARGIN) -> int:
+    """Longest run of winning days that would be genuinely surprising in n days.
+
+    The longest run in a series GROWS with the series: the expectation is about
+    log(n)/log(1/p), which is roughly 11 for 2,000 fair days. A fixed threshold of 10
+    therefore fired on pure noise 62% of the time and on any real edge as well, so it
+    carried no information. This scales it and adds a margin."""
+    n = max(int(n), 2)
+    p = min(max(float(p), 0.05), 0.95)
+    expected = np.log(n) / np.log(1.0 / p)
+    return int(max(TRIP_STREAK, np.ceil(expected) + margin))
+
+
 def tripwire(net: pd.Series, periods_per_year: float, level_violations: int = 0,
              asset_bound: pd.Series | None = None, benchmark_returns: pd.Series | None = None) -> Trip:
     """Plausibility checks on a NET return series (DatetimeIndex). Anything tripped is a
@@ -65,7 +85,9 @@ def tripwire(net: pd.Series, periods_per_year: float, level_violations: int = 0,
                (BTC buy-and-hold) itself exceeded 2 over the same window: a bull run is
                not a bug. (BTC's own 1y Sharpe passed 3 in 2020-21.)
       single:  any calendar DAY above +15% (bars are resampled to days first).
-      streak:  10 consecutive winning days.
+      streak:  a run of winning days longer than is surprising for a series of this
+               length at this win rate. A FIXED threshold cannot work: the longest run
+               grows with the sample, so 10 fired on 62% of 2,000-day noise runs.
       net>gross: the caller counted bars where net equity LEVEL exceeded gross level.
       asset:   a bar return above the best any asset offered from open/close prices
                (impossible for long-only spot without leverage).
@@ -84,20 +106,28 @@ def tripwire(net: pd.Series, periods_per_year: float, level_violations: int = 0,
         bench = bench.reindex(daily.index).fillna(0.0)
     def _sh(x):
         return float(x.mean() / x.std() * np.sqrt(365)) if len(x) > 2 and x.std() > 0 else 0.0
+    full = _sh(daily) if len(daily) >= 180 else 0.0
     if len(daily) >= 180:
-        full = _sh(daily)
         if full > TRIP_SHARPE and not (bench is not None and any(_sh(bench[c]) > 2.0 for c in bench)):
-            reasons.append(f"sharpe {full:.2f} > {TRIP_SHARPE} over full sample ({len(daily)} days)")
-    if len(daily) > 365:
+            reasons.append(f"sharpe {full:.2f} > {TRIP_SHARPE} sustained over the full sample "
+                           f"({len(daily)} days)")
+    # A single hot year is not a bug. A strategy whose true Sharpe is 1.2 throws one-year
+    # windows above 3 by ordinary sampling, and the old absolute rule flagged exactly
+    # that. What IS a bug is a window wildly out of line with the strategy's own level,
+    # so the comparison is against `full` plus the sampling error of a one-year Sharpe.
+    if len(daily) > 365 * 2:
         roll = daily.rolling(365)
         sh = (roll.mean() / roll.std() * np.sqrt(365)).dropna()
-        hot = sh[sh > TRIP_SHARPE]
+        se = np.sqrt((1.0 + 0.5 * full ** 2) / 365.0) * np.sqrt(365.0)
+        ceiling = full + ROLLING_SHARPE_SIGMAS * max(se, 0.5)
+        hot = sh[sh > ceiling]
+        if bench is not None and len(hot):
+            rb = bench.rolling(365)
+            shb = (rb.mean() / rb.std() * np.sqrt(365)).reindex(hot.index)
+            hot = hot[~(shb > 2.0).any(axis=1)]
         if len(hot):
-            if bench is not None:
-                rb = bench.rolling(365); shb = (rb.mean() / rb.std() * np.sqrt(365)).reindex(hot.index)
-                hot = hot[~(shb > 2.0).any(axis=1)]
-            if len(hot):
-                reasons.append(f"sharpe {hot.max():.2f} > {TRIP_SHARPE} over rolling 1y (benchmark did not)")
+            reasons.append(f"a 1y window reached sharpe {hot.max():.2f} against this strategy's own "
+                           f"{full:.2f} (ceiling {ceiling:.2f}), which the benchmark did not")
     # A large day is only implausible if it exceeds what the market actually offered.
     # A concentrated position in a volatile altcoin really can gain 20% in a day.
     big = daily[daily > TRIP_SINGLE_BAR]
@@ -121,12 +151,15 @@ def tripwire(net: pd.Series, periods_per_year: float, level_violations: int = 0,
         w = (x > 0).astype(int)
         return w.groupby((w != w.shift()).cumsum()).cumsum() if len(w) else w
     st = _streaks(daily)
-    hot = st[st >= TRIP_STREAK]
+    win_rate = float((daily > 0).mean()) if len(daily) else 0.5
+    thresh = streak_threshold(len(daily), win_rate)
+    hot = st[st >= thresh]
     if bench is not None and len(hot):
         bs = bench.apply(_streaks)
-        hot = hot[~(bs.reindex(hot.index) >= TRIP_STREAK).any(axis=1)]   # some benchmark ran the same streak
+        hot = hot[~(bs.reindex(hot.index) >= thresh).any(axis=1)]   # some benchmark ran the same streak
     if len(hot):
-        reasons.append(f"win streak {int(st.max())} >= {TRIP_STREAK} days (benchmark did not)")
+        reasons.append(f"win streak {int(st.max())} >= {thresh}, the surprising level for "
+                       f"{len(daily)} days at a {win_rate:.0%} win rate (benchmark did not)")
     return Trip(bool(reasons), "; ".join(reasons))
 
 
@@ -310,7 +343,7 @@ def walk_forward(bars: dict, variants: dict, bar: str, n_trials: int, start_equi
                                   monthly_deposit=monthly_deposit, kill_switch=False,
                                   venue=venue, style=style, cost_model=cost_model)
     wins = windows(close.index)
-    chosen, net_parts, gross_parts, per_window, n_trades, viol = [], [], [], [], 0, 0
+    chosen, net_parts, gross_parts, paper_parts, per_window, n_trades, viol = [], [], [], [], [], 0, 0
     for i, (tr0, tr1, te0, te1) in enumerate(wins):
         best, best_sh = None, -np.inf
         for p, r in runs.items():
@@ -320,11 +353,13 @@ def walk_forward(bars: dict, variants: dict, bar: str, n_trials: int, start_equi
                 best, best_sh = p, sh
         r = runs[best]
         gt = _gross_twr(r)
+        pt = r.paper_twr if r.paper_twr is not None else gt
         m = (r.twr.index >= te0) & (r.twr.index <= te1)
-        e, g = r.twr[m], gt[m]
+        e, g, pp = r.twr[m], gt[m], pt[m]
         if len(e) < 2:
             continue
         net_parts.append(e.pct_change().fillna(0.0)); gross_parts.append(g.pct_change().fillna(0.0))
+        paper_parts.append(pp.pct_change().fillna(0.0))
         viol += int((e > g * (1 + 1e-9)).sum())
         tr = r.trades[(r.trades["time"] >= te0) & (r.trades["time"] <= te1)] if len(r.trades) else r.trades
         n_trades += int(len(tr)); chosen.append(best)
@@ -334,6 +369,7 @@ def walk_forward(bars: dict, variants: dict, bar: str, n_trials: int, start_equi
     if not per_window:
         return {"eligible": False, "causality": {"passed": True}, "n_windows": 0, "windows": []}
     net_r, gross_r = pd.concat(net_parts), pd.concat(gross_parts)
+    paper_r = pd.concat(paper_parts) if paper_parts else gross_r
     dsr = deflated_sharpe(net_r.values, n_trials, ppy)
     trip = tripwire(net_r, ppy, level_violations=viol, asset_bound=asset_bound(bars), benchmark_returns=benchmark_daily_returns(bars))
     seg = segment_by_regime(net_r, _daily_labels(bars, net_r.index))
@@ -341,8 +377,10 @@ def walk_forward(bars: dict, variants: dict, bar: str, n_trials: int, start_equi
     gross_sh = float(gross_r.mean() / gross_r.std() * np.sqrt(ppy)) if gross_r.std() > 0 else 0.0
     eq = start_equity * (1 + net_r).cumprod()
     eligible = bool(passes_min_trades(n_trades) and not trip.tripped and net_sh > 0)
+    paper_sh = float(paper_r.mean() / paper_r.std() * np.sqrt(ppy)) if paper_r.std() > 0 else 0.0
     return {"bar": bar, "n_windows": len(per_window), "windows": per_window, "chosen_params": chosen,
             "last_param": chosen[-1], "sharpe_net": net_sh, "sharpe_gross": gross_sh,
+            "sharpe_paper": paper_sh,
             "oos_net_ret": float((1 + net_r).prod() - 1), "oos_gross_ret": float((1 + gross_r).prod() - 1),
             "oos_max_dd": float((eq / eq.cummax() - 1).min()),
             "windows_positive": float(np.mean([w["net_ret"] > 0 for w in per_window])),

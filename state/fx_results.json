@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-18 10:07:09.858849+00:00",
+ "as_of": "2026-09-18 11:08:21.584963+00:00",
  "pairs": [
   "EURUSD",
   "GBPUSD",
@@ -40,8 +40,8 @@
    "luck_sharpe": 0.6364512175147852,
    "single_regime": false,
    "dominant_share": 0.0,
-   "tripped": true,
-   "trip_reason": "win streak 12 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "family": "xs_momentum"
   },
   {
@@ -57,8 +57,8 @@
    "luck_sharpe": 0.6364512175147852,
    "single_regime": true,
    "dominant_share": 1.0,
-   "tripped": true,
-   "trip_reason": "win streak 10 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "family": "xs_momentum_gated"
   },
   {
@@ -74,8 +74,8 @@
    "luck_sharpe": 0.6364512175147852,
    "single_regime": false,
    "dominant_share": 0.0,
-   "tripped": true,
-   "trip_reason": "win streak 11 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "family": "trend_basket"
   },
   {
@@ -91,8 +91,8 @@
    "luck_sharpe": 0.6364512175147852,
    "single_regime": false,
    "dominant_share": 0.0,
-   "tripped": true,
-   "trip_reason": "win streak 12 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "family": "breakout"
   },
   {
@@ -108,8 +108,8 @@
    "luck_sharpe": 0.6364512175147852,
    "single_regime": false,
    "dominant_share": 0.0,
-   "tripped": true,
-   "trip_reason": "win streak 11 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "family": "xs_reversal"
   },
   {
@@ -142,8 +142,8 @@
    "luck_sharpe": 0.6364512175147852,
    "single_regime": false,
    "dominant_share": 0.0,
-   "tripped": true,
-   "trip_reason": "win streak 11 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "family": "vol_target_trend"
   }
  ],
@@ -258,8 +258,8 @@
    "single_regime": false,
    "dominant": "bear",
    "dominant_share": 0.0,
-   "tripped": true,
-   "trip_reason": "win streak 11 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "eligible": false
   },
   {
@@ -486,8 +486,8 @@
    "single_regime": false,
    "dominant": "bear",
    "dominant_share": 0.0,
-   "tripped": true,
-   "trip_reason": "win streak 10 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "eligible": false
   },
   {
@@ -600,8 +600,8 @@
    "single_regime": false,
    "dominant": "bear",
    "dominant_share": 0.0,
-   "tripped": true,
-   "trip_reason": "win streak 11 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "eligible": false
   },
   {
@@ -942,8 +942,8 @@
    "single_regime": false,
    "dominant": "bear",
    "dominant_share": 0.0,
-   "tripped": true,
-   "trip_reason": "win streak 10 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "eligible": false
   },
   {
@@ -1056,8 +1056,8 @@
    "single_regime": false,
    "dominant": "bear",
    "dominant_share": 0.0,
-   "tripped": true,
-   "trip_reason": "win streak 11 >= 10 days (benchmark did not)",
+   "tripped": false,
+   "trip_reason": "",
    "eligible": false
   }
  ]

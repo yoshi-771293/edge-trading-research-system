@@ -1,0 +1,4082 @@
+{
+ "as_of": "2026-09-18 11:01:49.645996+00:00",
+ "n_trials": 87,
+ "top_n": 30,
+ "universe_start": "2019-05-20 00:00:00+00:00",
+ "venue": "okx",
+ "style": "maker",
+ "symbols_ever_selected": [
+  "1000SATSUSDT",
+  "AAVEUSDT",
+  "ACEUSDT",
+  "ACHUSDT",
+  "ADAUSDT",
+  "AGIXUSDT",
+  "AIXBTUSDT",
+  "AKROUSDT",
+  "ALGOUSDT",
+  "ALICEUSDT",
+  "ALLOUSDT",
+  "ALPHAUSDT",
+  "ALTUSDT",
+  "ANCUSDT",
+  "ANKRUSDT",
+  "APEUSDT",
+  "API3USDT",
+  "APTUSDT",
+  "ARBUSDT",
+  "ARKMUSDT",
+  "ARPAUSDT",
+  "ARUSDT",
+  "ASTERUSDT",
+  "ATOMUSDT",
+  "AUCTIONUSDT",
+  "AVAXUSDT",
+  "AXSUSDT",
+  "BAKEUSDT",
+  "BANANAS31USDT",
+  "BANDUSDT",
+  "BANKUSDT",
+  "BATUSDT",
+  "BCCUSDT",
+  "BCHABCUSDT",
+  "BCHSVUSDT",
+  "BCHUSDT",
+  "BELUSDT",
+  "BFUSDUSDT",
+  "BIOUSDT",
+  "BLZUSDT",
+  "BNBUSDT",
+  "BNXUSDT",
+  "BOMEUSDT",
+  "BONDUSDT",
+  "BONKUSDT",
+  "BTCUSDT",
+  "BTTUSDT",
+  "BURGERUSDT",
+  "CAKEUSDT",
+  "CELRUSDT",
+  "CFXUSDT",
+  "CHRUSDT",
+  "CHZUSDT",
+  "CKBUSDT",
+  "COMPUSDT",
+  "COTIUSDT",
+  "CRVUSDT",
+  "CVCUSDT",
+  "DARUSDT",
+  "DASHUSDT",
+  "DENTUSDT",
+  "DEXEUSDT",
+  "DOGEUSDT",
+  "DOTUSDT",
+  "DUSKUSDT",
+  "DYDXUSDT",
+  "EGLDUSDT",
+  "EIGENUSDT",
+  "ENAUSDT",
+  "ENJUSDT",
+  "ENSOUSDT",
+  "ENSUSDT",
+  "EOSUSDT",
+  "ERDUSDT",
+  "ETCUSDT",
+  "ETHFIUSDT",
+  "ETHUSDT",
+  "FETUSDT",
+  "FILUSDT",
+  "FLMUSDT",
+  "FLOKIUSDT",
+  "FLOWUSDT",
+  "FORMUSDT",
+  "FRONTUSDT",
+  "FTMUSDT",
+  "FTTUSDT",
+  "FUNUSDT",
+  "GALAUSDT",
+  "GASUSDT",
+  "GIGGLEUSDT",
+  "GMTUSDT",
+  "GRTUSDT",
+  "HBARUSDT",
+  "HIFIUSDT",
+  "HIGHUSDT",
+  "HOMEUSDT",
+  "HOOKUSDT",
+  "HOTUSDT",
+  "ICPUSDT",
+  "ICXUSDT",
+  "IDEXUSDT",
+  "IDUSDT",
+  "INJUSDT",
+  "IOSTUSDT",
+  "IOTAUSDT",
+  "IOTXUSDT",
+  "JASMYUSDT",
+  "JTOUSDT",
+  "JUPUSDT",
+  "KAITOUSDT",
+  "KAVAUSDT",
+  "KEYUSDT",
+  "KITEUSDT",
+  "KLAYUSDT",
+  "KNCUSDT",
+  "KSMUSDT",
+  "LAYERUSDT",
+  "LAZIOUSDT",
+  "LDOUSDT",
+  "LENDUSDT",
+  "LEVERUSDT",
+  "LINAUSDT",
+  "LINKUSDT",
+  "LOOMUSDT",
+  "LPTUSDT",
+  "LQTYUSDT",
+  "LRCUSDT",
+  "LTCUSDT",
+  "LUNAUSDT",
+  "LUNCUSDT",
+  "MAGICUSDT",
+  "MANAUSDT",
+  "MASKUSDT",
+  "MATICUSDT",
+  "MBLUSDT",
+  "MBOXUSDT",
+  "MDXUSDT",
+  "MINAUSDT",
+  "MKRUSDT",
+  "MOVRUSDT",
+  "MTLUSDT",
+  "NANOUSDT",
+  "NEARUSDT",
+  "NEIROUSDT",
+  "NEOUSDT",
+  "NOTUSDT",
+  "NPXSUSDT",
+  "NULSUSDT",
+  "OCEANUSDT",
+  "OGNUSDT",
+  "OGUSDT",
+  "OMGUSDT",
+  "OMUSDT",
+  "ONDOUSDT",
+  "ONEUSDT",
+  "ONGUSDT",
+  "ONTUSDT",
+  "OPUSDT",
+  "ORDIUSDT",
+  "PAXGUSDT",
+  "PENDLEUSDT",
+  "PENGUUSDT",
+  "PEOPLEUSDT",
+  "PEPEUSDT",
+  "PERPUSDT",
+  "PHAUSDT",
+  "PNUTUSDT",
+  "POLYXUSDT",
+  "PUMPUSDT",
+  "QNTUSDT",
+  "QTUMUSDT",
+  "RADUSDT",
+  "RAREUSDT",
+  "RAYUSDT",
+  "REEFUSDT",
+  "RENDERUSDT",
+  "RENUSDT",
+  "RLUSDUSDT",
+  "RNDRUSDT",
+  "ROSEUSDT",
+  "RSRUSDT",
+  "RUNEUSDT",
+  "RVNUSDT",
+  "SAGAUSDT",
+  "SANDUSDT",
+  "SANTOSUSDT",
+  "SEIUSDT",
+  "SHIBUSDT",
+  "SLPUSDT",
+  "SNXUSDT",
+  "SOLUSDT",
+  "SRMUSDT",
+  "STMXUSDT",
+  "STORJUSDT",
+  "STOUSDT",
+  "STPTUSDT",
+  "STRAXUSDT",
+  "STRKUSDT",
+  "STXUSDT",
+  "SUIUSDT",
+  "SUNUSDT",
+  "SUSDT",
+  "SUSHIUSDT",
+  "SXPUSDT",
+  "SYNUSDT",
+  "TAOUSDT",
+  "TFUELUSDT",
+  "THETAUSDT",
+  "TIAUSDT",
+  "TLMUSDT",
+  "TOMOUSDT",
+  "TONUSDT",
+  "TRBUSDT",
+  "TROYUSDT",
+  "TRUMPUSDT",
+  "TRUUSDT",
+  "TRXUSDT",
+  "TUTUSDT",
+  "TWTUSDT",
+  "UNIUSDT",
+  "USTCUSDT",
+  "USTUSDT",
+  "UUSDT",
+  "VETUSDT",
+  "VGXUSDT",
+  "VIRTUALUSDT",
+  "WAVESUSDT",
+  "WIFUSDT",
+  "WINUSDT",
+  "WLDUSDT",
+  "WLFIUSDT",
+  "WOOUSDT",
+  "WRXUSDT",
+  "XAUTUSDT",
+  "XEMUSDT",
+  "XLMUSDT",
+  "XMRUSDT",
+  "XPLUSDT",
+  "XRPUSDT",
+  "XTZUSDT",
+  "XVGUSDT",
+  "XVSUSDT",
+  "YFIIUSDT",
+  "YFIUSDT",
+  "YGGUSDT",
+  "ZECUSDT",
+  "ZENUSDT",
+  "ZILUSDT",
+  "ZKUSDT",
+  "ZROUSDT",
+  "ZRXUSDT"
+ ],
+ "shortlist": [
+  {
+   "family": "xs_momentum_gated",
+   "bar": "1d",
+   "param": [
+    20,
+    5,
+    100
+   ],
+   "eligible": false,
+   "rank_score": -0.8394530994040826,
+   "why": "deflated: PSR 0.16 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": 0.6212850560520038,
+   "sharpe_gross": 0.6989845841131903,
+   "oos_net_ret": 1.9696812554262126,
+   "oos_gross_ret": 3.0118852030809427,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.8400893695253244,
+   "windows_positive": 0.34782608695652173,
+   "n_windows": 23,
+   "n_trades": 3627,
+   "deflated": {
+    "sharpe": 0.621433529003353,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.15992561553986534,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.0003451091607970119,
+      "sharpe_raw": -0.023103264946202826
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0024304281339671847,
+      "sharpe_raw": 0.05173653198164142
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": 0.003416878351732473,
+      "sharpe_raw": 0.07959970337193606
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.0009766029058296364,
+      "sharpe_raw": -0.03243966223830586
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.004284939140186008,
+      "sharpe_raw": 0.100818504664125
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": 0.001400934032622784
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.00456542561024352
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "low_vol_trend",
+   "bar": "1w",
+   "param": [
+    100,
+    5,
+    20
+   ],
+   "eligible": false,
+   "rank_score": -0.881709530255416,
+   "why": "deflated: PSR 0.12 < 0.5 (expected max noise Sharpe 1.07); single-regime: earns only in bull",
+   "sharpe_net": 0.5644913734134767,
+   "sharpe_gross": 0.57563367826272,
+   "oos_net_ret": 1.3424475364635287,
+   "oos_gross_ret": 1.4453414564210143,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.7818170121029822,
+   "windows_positive": 0.2727272727272727,
+   "n_windows": 22,
+   "n_trades": 718,
+   "deflated": {
+    "sharpe": 0.5654913589154879,
+    "expected_max_sharpe": 1.065469112090846,
+    "psr": 0.11772597837117049,
+    "n": 283
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 8,
+      "mean": 0.0,
+      "sharpe_raw": 0.0
+     },
+     "trend:bull": {
+      "n": 153,
+      "mean": 0.003978314252219547,
+      "sharpe_raw": 0.07294019926256635
+     },
+     "vol:high": {
+      "n": 31,
+      "mean": 0.022757091827028706,
+      "sharpe_raw": 0.13628686045016705
+     },
+     "vol:low": {
+      "n": 207,
+      "mean": -0.0028312017867136888,
+      "sharpe_raw": -0.04563545130763446
+     },
+     "vol:mid": {
+      "n": 36,
+      "mean": 0.030202335258634236,
+      "sharpe_raw": 0.30587336191661374
+     },
+     "chop:False": {
+      "n": 283,
+      "mean": 0.00695822100767688
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ]
+   ],
+   "oos_index": [
+    "2020-12-07 00:00:00+00:00",
+    "2026-05-25 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "breakout",
+   "bar": "1d",
+   "param": [
+    20,
+    5
+   ],
+   "eligible": false,
+   "rank_score": -0.9295638529835673,
+   "why": "deflated: PSR 0.07 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": 0.42247306515447114,
+   "sharpe_gross": 0.6392942989738173,
+   "oos_net_ret": -0.15272852832692407,
+   "oos_gross_ret": 2.1216816617609338,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9723780997518559,
+   "windows_positive": 0.43478260869565216,
+   "n_windows": 23,
+   "n_trades": 6744,
+   "deflated": {
+    "sharpe": 0.42257402657666865,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.07001367395127836,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.0011656517061608897,
+      "sharpe_raw": -0.02947660385776439
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0028857526122901423,
+      "sharpe_raw": 0.0537439539430401
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": 0.003546616383392139,
+      "sharpe_raw": 0.0712107570992015
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.0020662841104354956,
+      "sharpe_raw": -0.04571019935316601
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.006108496438030896,
+      "sharpe_raw": 0.11855395473613746
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": 0.0011403199348297814
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.00105628368944251
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     20,
+     5
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "trend_basket",
+   "bar": "1w",
+   "param": [
+    100,
+    3
+   ],
+   "eligible": false,
+   "rank_score": -0.9621486387284238,
+   "why": "deflated: PSR 0.04 < 0.5 (expected max noise Sharpe 1.07); single-regime: earns only in bull",
+   "sharpe_net": 0.3018853618144271,
+   "sharpe_gross": 0.3021792159565986,
+   "oos_net_ret": -0.19906193521279603,
+   "oos_gross_ret": -0.16605085250865015,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.81386980096285,
+   "windows_positive": 0.2727272727272727,
+   "n_windows": 22,
+   "n_trades": 710,
+   "deflated": {
+    "sharpe": 0.3024201458683593,
+    "expected_max_sharpe": 1.065469112090846,
+    "psr": 0.037549475909761806,
+    "n": 283
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 8,
+      "mean": 0.0,
+      "sharpe_raw": 0.0
+     },
+     "trend:bull": {
+      "n": 153,
+      "mean": 0.0016527742091675482,
+      "sharpe_raw": 0.0208187919863918
+     },
+     "vol:high": {
+      "n": 31,
+      "mean": 0.011217762000858713,
+      "sharpe_raw": 0.06803818597381474
+     },
+     "vol:low": {
+      "n": 207,
+      "mean": -0.004468349109482227,
+      "sharpe_raw": -0.051512478054777426
+     },
+     "vol:mid": {
+      "n": 36,
+      "mean": 0.03248226565986908,
+      "sharpe_raw": 0.4043519537982219
+     },
+     "chop:False": {
+      "n": 283,
+      "mean": 0.004098639148556511
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     100,
+     3
+    ]
+   ],
+   "oos_index": [
+    "2020-12-07 00:00:00+00:00",
+    "2026-05-25 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "trend_basket",
+   "bar": "1d",
+   "param": [
+    200,
+    5
+   ],
+   "eligible": false,
+   "rank_score": -0.9630325338884496,
+   "why": "deflated: PSR 0.04 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": 0.2898063205321208,
+   "sharpe_gross": 0.5328306808606822,
+   "oos_net_ret": -0.6217246210907894,
+   "oos_gross_ret": 1.0783009066536815,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9896691163063227,
+   "windows_positive": 0.391304347826087,
+   "n_windows": 23,
+   "n_trades": 6486,
+   "deflated": {
+    "sharpe": 0.289875577629664,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.03667765979101833,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.002456086687121252,
+      "sharpe_raw": -0.05649450623253744
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0033800048534521174,
+      "sharpe_raw": 0.06319896554749903
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": 0.0026999132377092394,
+      "sharpe_raw": 0.05247899374124048
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.002724820145492748,
+      "sharpe_raw": -0.057033909164482643
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.006946546625674309,
+      "sharpe_raw": 0.137869906146855
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": 0.0010038375242587706
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.005867344453941046
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     200,
+     5
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "breakout",
+   "bar": "4h",
+   "param": [
+    100,
+    5
+   ],
+   "eligible": false,
+   "rank_score": -0.9706844935355722,
+   "why": "deflated: PSR 0.03 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": 0.24671603774696405,
+   "sharpe_gross": 0.8833626412230462,
+   "oos_net_ret": -0.6337193544019255,
+   "oos_gross_ret": 6.801428711668412,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9937288647081729,
+   "windows_positive": 0.43478260869565216,
+   "n_windows": 23,
+   "n_trades": 19741,
+   "deflated": {
+    "sharpe": 0.24672595219321963,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 0.029068790426680813,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.0002739609472499312,
+      "sharpe_raw": -0.017595026471780555
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": 0.0004082987353122069,
+      "sharpe_raw": 0.01898765932193143
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": 0.00012760454911527343,
+      "sharpe_raw": 0.005409016634616764
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0003401992677091891,
+      "sharpe_raw": -0.021687354454924885
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.00104421900423902,
+      "sharpe_raw": 0.047657152150643145
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": 0.00011987535722053694
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.0003958378143803051
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_momentum",
+   "bar": "1d",
+   "param": [
+    20,
+    3
+   ],
+   "eligible": false,
+   "rank_score": -0.9737224898963055,
+   "why": "deflated: PSR 0.03 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": 0.22636607534259898,
+   "sharpe_gross": 0.3724045130475626,
+   "oos_net_ret": -0.7617679526241102,
+   "oos_gross_ret": -0.0444042584571841,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9928725081025808,
+   "windows_positive": 0.391304347826087,
+   "n_windows": 23,
+   "n_trades": 5618,
+   "deflated": {
+    "sharpe": 0.226420171669179,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.0260511440283518,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.0015355135058709027,
+      "sharpe_raw": -0.03221174952513724
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0023581921632493817,
+      "sharpe_raw": 0.04431998244701146
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": 0.0009242392567161595,
+      "sharpe_raw": 0.01617184093957896
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.002167103096556982,
+      "sharpe_raw": -0.046982459986339584
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.006435750508605145,
+      "sharpe_raw": 0.11667701445826674
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": 0.000689527522634562
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.0016584604112466078
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     20,
+     3
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "low_vol_trend",
+   "bar": "1d",
+   "param": [
+    50,
+    5,
+    20
+   ],
+   "eligible": false,
+   "rank_score": -0.9759519442619818,
+   "why": "deflated: PSR 0.02 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": 0.2069555474009929,
+   "sharpe_gross": 0.3474792372318788,
+   "oos_net_ret": -0.3674889936996212,
+   "oos_gross_ret": 0.18682281392412436,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.8921566481047185,
+   "windows_positive": 0.5652173913043478,
+   "n_windows": 23,
+   "n_trades": 4305,
+   "deflated": {
+    "sharpe": 0.20700500505432198,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.02384110019061713,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.0009129791793942469,
+      "sharpe_raw": -0.02620843082924755
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0014199582184997036,
+      "sharpe_raw": 0.04279701136805805
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": -0.0002371017818975301,
+      "sharpe_raw": -0.00501528146203978
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.0014476254327618083,
+      "sharpe_raw": -0.05229891560242934
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.004780968117228554,
+      "sharpe_raw": 0.13822786516596072
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": 0.0003934273825126405
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.0002958529237817985
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_reversal",
+   "bar": "1d",
+   "param": [
+    5,
+    3,
+    200
+   ],
+   "eligible": false,
+   "rank_score": -0.9772708427665134,
+   "why": "deflated: PSR 0.02 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": 0.19945986360816692,
+   "sharpe_gross": 0.31175645055346224,
+   "oos_net_ret": -0.29950458293236937,
+   "oos_gross_ret": 0.14981725353363418,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.6931299425713693,
+   "windows_positive": 0.2608695652173913,
+   "n_windows": 23,
+   "n_trades": 2959,
+   "deflated": {
+    "sharpe": 0.1995075299641128,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.022529697369878404,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -6.447185800106818e-05,
+      "sharpe_raw": -0.0029799333786565334
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.000651019620865773,
+      "sharpe_raw": 0.017292294536618878
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": 0.0007158931997352407,
+      "sharpe_raw": 0.014746083852781654
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.0008285912854353576,
+      "sharpe_raw": -0.0355129154519042
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.002583054807204114,
+      "sharpe_raw": 0.08280934078572415
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": 0.00039095336749201
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.0012898836548030168
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     5,
+     3,
+     200
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "breakout",
+   "bar": "1w",
+   "param": [
+    55,
+    5
+   ],
+   "eligible": false,
+   "rank_score": -0.983660827379557,
+   "why": "deflated: PSR 0.02 < 0.5 (expected max noise Sharpe 1.07); single-regime: earns only in bull",
+   "sharpe_net": 0.15196129621125073,
+   "sharpe_gross": 0.16116778227825562,
+   "oos_net_ret": -0.5033873101025865,
+   "oos_gross_ret": -0.46000267455764654,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9064355654768809,
+   "windows_positive": 0.2727272727272727,
+   "n_windows": 22,
+   "n_trades": 666,
+   "deflated": {
+    "sharpe": 0.15223049269544,
+    "expected_max_sharpe": 1.065469112090846,
+    "psr": 0.016187211324231794,
+    "n": 283
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 8,
+      "mean": 0.0,
+      "sharpe_raw": 0.0
+     },
+     "trend:bull": {
+      "n": 153,
+      "mean": 0.00031945813953171057,
+      "sharpe_raw": 0.004436359212523016
+     },
+     "vol:high": {
+      "n": 31,
+      "mean": 0.0054680898535941274,
+      "sharpe_raw": 0.03403736917477068
+     },
+     "vol:low": {
+      "n": 207,
+      "mean": -0.007481862164206667,
+      "sharpe_raw": -0.09714636067800173
+     },
+     "vol:mid": {
+      "n": 36,
+      "mean": 0.03727345076436463,
+      "sharpe_raw": 0.4006492364744394
+     },
+     "chop:False": {
+      "n": 283,
+      "mean": 0.0020022839127249387
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     55,
+     3
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     55,
+     5
+    ]
+   ],
+   "oos_index": [
+    "2020-12-07 00:00:00+00:00",
+    "2026-05-25 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "vol_target_trend",
+   "bar": "1d",
+   "param": [
+    200,
+    5,
+    20
+   ],
+   "eligible": false,
+   "rank_score": -0.9906861121446652,
+   "why": "deflated: PSR 0.01 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": 0.05279638206946314,
+   "sharpe_gross": 0.17221412759385774,
+   "oos_net_ret": -0.7806633297518454,
+   "oos_gross_ret": -0.4563925207702324,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9794986815872923,
+   "windows_positive": 0.34782608695652173,
+   "n_windows": 23,
+   "n_trades": 5801,
+   "deflated": {
+    "sharpe": 0.05280899920002191,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.009261091473265414,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.0021801928799961906,
+      "sharpe_raw": -0.05947391860568712
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0019969074313852834,
+      "sharpe_raw": 0.045443353093500956
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": 0.0002947683367301857,
+      "sharpe_raw": 0.006774945271019908
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.00197600206819313,
+      "sharpe_raw": -0.049746920538578064
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.00455782879605567,
+      "sharpe_raw": 0.1109637047117028
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": 0.00033425310802588567
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.005604813496498373
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "vol_target_trend",
+   "bar": "1w",
+   "param": [
+    100,
+    5,
+    20
+   ],
+   "eligible": false,
+   "rank_score": -0.9914888489116487,
+   "why": "deflated: PSR 0.01 < 0.5 (expected max noise Sharpe 1.07); single-regime: earns only in bull",
+   "sharpe_net": 0.04359179037803785,
+   "sharpe_gross": 0.048491468980442196,
+   "oos_net_ret": -0.0619335865891848,
+   "oos_gross_ret": -0.05612164413529164,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.28204437811221594,
+   "windows_positive": 0.045454545454545456,
+   "n_windows": 22,
+   "n_trades": 138,
+   "deflated": {
+    "sharpe": 0.04366901238786441,
+    "expected_max_sharpe": 1.065469112090846,
+    "psr": 0.008467559297973234,
+    "n": 283
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 8,
+      "mean": 0.0,
+      "sharpe_raw": 0.0
+     },
+     "trend:bull": {
+      "n": 153,
+      "mean": 0.0017681766092365878,
+      "sharpe_raw": 0.07235320263513713
+     },
+     "vol:high": {
+      "n": 31,
+      "mean": -0.004261111275321716,
+      "sharpe_raw": -0.08030993686965666
+     },
+     "vol:low": {
+      "n": 207,
+      "mean": 0.0003798126350541151,
+      "sharpe_raw": 0.017038703245132236
+     },
+     "vol:mid": {
+      "n": 36,
+      "mean": 0.0028338555945103786,
+      "sharpe_raw": 0.0844782391791994
+     },
+     "chop:False": {
+      "n": 283,
+      "mean": 0.00017153910715053805
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ]
+   ],
+   "oos_index": [
+    "2020-12-07 00:00:00+00:00",
+    "2026-05-25 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_momentum_gated",
+   "bar": "4h",
+   "param": [
+    60,
+    3,
+    200
+   ],
+   "eligible": false,
+   "rank_score": -0.9958384452338571,
+   "why": "TRIPWIRE: asset bound exceeded on 1 bars (max 0.04% above best asset); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": -0.06398850948042933,
+   "sharpe_gross": 0.4887108273972571,
+   "oos_net_ret": -0.8447777388728201,
+   "oos_gross_ret": 0.9567091770954945,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9883067357011642,
+   "windows_positive": 0.21739130434782608,
+   "n_windows": 23,
+   "n_trades": 13107,
+   "deflated": {
+    "sharpe": -0.06399108090077156,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 0.004225543275623292,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.00034712150643681304,
+      "sharpe_raw": -0.03323865767202457
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": 0.0002455353376037858,
+      "sharpe_raw": 0.012665305342278343
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": 0.0005101957487362855,
+      "sharpe_raw": 0.028852996437760292
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0003069462040551217,
+      "sharpe_raw": -0.0223567006296915
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.00022078154080402057,
+      "sharpe_raw": 0.011620603896565777
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -3.065700732583977e-05
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": 0.00020328706428828126
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "asset bound exceeded on 1 bars (max 0.04% above best asset)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_momentum",
+   "bar": "1w",
+   "param": [
+    60,
+    3
+   ],
+   "eligible": false,
+   "rank_score": -0.9960476569611958,
+   "why": "net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.07); single-regime: earns only in bear",
+   "sharpe_net": -0.07280298681283916,
+   "sharpe_gross": -0.05586944763207547,
+   "oos_net_ret": -0.9054183619469021,
+   "oos_gross_ret": -0.8798680336654466,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9715604490698581,
+   "windows_positive": 0.45454545454545453,
+   "n_windows": 22,
+   "n_trades": 1062,
+   "deflated": {
+    "sharpe": -0.07293195588968389,
+    "expected_max_sharpe": 1.065469112090846,
+    "psr": 0.0040251460256170764,
+    "n": 283
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 8,
+      "mean": 0.04627348285294666,
+      "sharpe_raw": 0.694733190771915
+     },
+     "trend:bull": {
+      "n": 153,
+      "mean": -0.00582472324468757,
+      "sharpe_raw": -0.05661799787020773
+     },
+     "vol:high": {
+      "n": 31,
+      "mean": -0.004623730650695631,
+      "sharpe_raw": -0.0312211811459465
+     },
+     "vol:low": {
+      "n": 207,
+      "mean": -0.00915434374429572,
+      "sharpe_raw": -0.08293266627671214
+     },
+     "vol:mid": {
+      "n": 36,
+      "mean": 0.02814024694380641,
+      "sharpe_raw": 0.22986604309931408
+     },
+     "chop:False": {
+      "n": 283,
+      "mean": -0.00118770913803297
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bear"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     60,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     60,
+     3
+    ]
+   ],
+   "oos_index": [
+    "2020-12-07 00:00:00+00:00",
+    "2026-05-25 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "trend_basket",
+   "bar": "4h",
+   "param": [
+    100,
+    3
+   ],
+   "eligible": false,
+   "rank_score": -0.9960896324521702,
+   "why": "net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": -0.07238944360557431,
+   "sharpe_gross": 0.8002928056475886,
+   "oos_net_ret": -0.9456073759402432,
+   "oos_gross_ret": 4.460371824674118,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.99853911956402,
+   "windows_positive": 0.391304347826087,
+   "n_windows": 23,
+   "n_trades": 19147,
+   "deflated": {
+    "sharpe": -0.07239235262298012,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 0.003982756991435316,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.000510013263521381,
+      "sharpe_raw": -0.02901042092055225
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": 0.00036250927165048694,
+      "sharpe_raw": 0.01646630991506725
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": -2.5722752087646415e-05,
+      "sharpe_raw": -0.0011236062201578918
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0005324833559217226,
+      "sharpe_raw": -0.03040114878192634
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.001060661100216399,
+      "sharpe_raw": 0.04583911352372826
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -2.747590871729208e-05
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.00012524495388522357
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     100,
+     3
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_momentum",
+   "bar": "4h",
+   "param": [
+    120,
+    5
+   ],
+   "eligible": false,
+   "rank_score": -0.9969665151176873,
+   "why": "TRIPWIRE: asset bound exceeded on 1 bars (max 0.33% above best asset); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": -0.10588338173207398,
+   "sharpe_gross": 0.8996526020750167,
+   "oos_net_ret": -0.966308179731141,
+   "oos_gross_ret": 6.66890836780065,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9992507074435141,
+   "windows_positive": 0.30434782608695654,
+   "n_windows": 23,
+   "n_trades": 17221,
+   "deflated": {
+    "sharpe": -0.10588763672541424,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 0.00313936826404486,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.00033151104185856223,
+      "sharpe_raw": -0.017339159981723126
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": 0.0001851129584134664,
+      "sharpe_raw": 0.008128166858379037
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": 0.00040377903001687646,
+      "sharpe_raw": 0.017104770984487382
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0006138187131118532,
+      "sharpe_raw": -0.03273492371340307
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.0008656920076360309,
+      "sharpe_raw": 0.03577698975081128
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -2.728132689057198e-05
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.0005775057830636898
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "asset bound exceeded on 1 bars (max 0.33% above best asset)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_momentum_gated",
+   "bar": "1w",
+   "param": [
+    60,
+    3,
+    200
+   ],
+   "eligible": false,
+   "rank_score": -0.9993861909595039,
+   "why": "net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.07)",
+   "sharpe_net": -0.26647875095952533,
+   "sharpe_gross": -0.25737298310508017,
+   "oos_net_ret": -0.8261161673007398,
+   "oos_gross_ret": -0.818073421516645,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.8789576169912661,
+   "windows_positive": 0.13636363636363635,
+   "n_windows": 22,
+   "n_trades": 390,
+   "deflated": {
+    "sharpe": -0.2669508128901483,
+    "expected_max_sharpe": 1.065469112090846,
+    "psr": 0.000880287791455605,
+    "n": 283
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 8,
+      "mean": 0.0,
+      "sharpe_raw": 0.0
+     },
+     "trend:bull": {
+      "n": 153,
+      "mean": -0.006367887301795163,
+      "sharpe_raw": -0.1340946429088957
+     },
+     "vol:high": {
+      "n": 31,
+      "mean": 0.0009961313431270738,
+      "sharpe_raw": 0.006955861462418043
+     },
+     "vol:low": {
+      "n": 207,
+      "mean": -0.007477467382081763,
+      "sharpe_raw": -0.11743977882383877
+     },
+     "vol:mid": {
+      "n": 36,
+      "mean": 0.019505070826913308,
+      "sharpe_raw": 0.2363450796746787
+     },
+     "chop:False": {
+      "n": 283,
+      "mean": -0.0028790569847530266
+     }
+    },
+    "single_regime": false,
+    "dominant_share": 0.0,
+    "dominant": "bear"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ]
+   ],
+   "oos_index": [
+    "2020-12-07 00:00:00+00:00",
+    "2026-05-25 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_reversal",
+   "bar": "1w",
+   "param": [
+    5,
+    3,
+    200
+   ],
+   "eligible": false,
+   "rank_score": -0.9996451751213219,
+   "why": "net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.07)",
+   "sharpe_net": -0.28535092911417337,
+   "sharpe_gross": -0.2671435711927719,
+   "oos_net_ret": -0.7748617018133029,
+   "oos_gross_ret": -0.7564086932315559,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.8491470809587771,
+   "windows_positive": 0.09090909090909091,
+   "n_windows": 22,
+   "n_trades": 385,
+   "deflated": {
+    "sharpe": -0.28585642274178025,
+    "expected_max_sharpe": 1.065469112090846,
+    "psr": 0.000640175807792284,
+    "n": 283
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 8,
+      "mean": 0.0,
+      "sharpe_raw": 0.0
+     },
+     "trend:bull": {
+      "n": 153,
+      "mean": -0.002888429527933711,
+      "sharpe_raw": -0.06566903713359114
+     },
+     "vol:high": {
+      "n": 31,
+      "mean": 0.01889672909995576,
+      "sharpe_raw": 0.139145342955192
+     },
+     "vol:low": {
+      "n": 207,
+      "mean": -0.006293248554454228,
+      "sharpe_raw": -0.11233508386629998
+     },
+     "vol:mid": {
+      "n": 36,
+      "mean": -0.0011945548828362104,
+      "sharpe_raw": -0.024769799206082417
+     },
+     "chop:False": {
+      "n": 283,
+      "mean": -0.002685186658853357
+     }
+    },
+    "single_regime": false,
+    "dominant_share": 0.0,
+    "dominant": "bear"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ]
+   ],
+   "oos_index": [
+    "2020-12-07 00:00:00+00:00",
+    "2026-05-25 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "vol_target_trend",
+   "bar": "4h",
+   "param": [
+    200,
+    5,
+    20
+   ],
+   "eligible": false,
+   "rank_score": -1.0000460545747782,
+   "why": "net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": -0.385491580287828,
+   "sharpe_gross": 0.6267747188248527,
+   "oos_net_ret": -0.9747781940844942,
+   "oos_gross_ret": 1.9394375058610827,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9988052334027352,
+   "windows_positive": 0.30434782608695654,
+   "n_windows": 23,
+   "n_trades": 18178,
+   "deflated": {
+    "sharpe": -0.385507071520541,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 0.0003394370055095,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.0005411932505699018,
+      "sharpe_raw": -0.03582768376333094
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": 0.00018313031664218723,
+      "sharpe_raw": 0.009566182814772263
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": -0.0001349573592109687,
+      "sharpe_raw": -0.006787745520790812
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0006087661929976404,
+      "sharpe_raw": -0.039677475917399965
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.0008666124318463437,
+      "sharpe_raw": 0.04399140549365842
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -0.00013740150241573642
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.0003040149250459139
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "low_vol_trend",
+   "bar": "4h",
+   "param": [
+    200,
+    5,
+    20
+   ],
+   "eligible": false,
+   "rank_score": -1.0006355805880824,
+   "why": "net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04); single-regime: earns only in bull",
+   "sharpe_net": -0.6592659263584899,
+   "sharpe_gross": 0.3790835287600536,
+   "oos_net_ret": -0.9603155150674755,
+   "oos_gross_ret": 0.5003436946476818,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.9933903739777555,
+   "windows_positive": 0.30434782608695654,
+   "n_windows": 23,
+   "n_trades": 11350,
+   "deflated": {
+    "sharpe": -0.659292419393376,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 2.3685338276074535e-05,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.0004218869933627058,
+      "sharpe_raw": -0.037223878521792535
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": 2.155761609845255e-05,
+      "sharpe_raw": 0.0015768308270151135
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": -6.875215884041513e-05,
+      "sharpe_raw": -0.004259403874607528
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0004988130960438324,
+      "sharpe_raw": -0.04753165217064268
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.0004430382318278021,
+      "sharpe_raw": 0.031418618104790956
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -0.0001725568550354893
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.0003309578661365665
+     }
+    },
+    "single_regime": true,
+    "dominant_share": 1.0,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_reversal",
+   "bar": "4h",
+   "param": [
+    20,
+    5,
+    200
+   ],
+   "eligible": false,
+   "rank_score": -1.001409653893726,
+   "why": "net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -1.4096553375102014,
+   "sharpe_gross": -0.774030439592381,
+   "oos_net_ret": -0.9946491813856676,
+   "oos_gross_ret": -0.8647465780372419,
+   "min_trades_ok": true,
+   "oos_max_dd": -0.996115884398087,
+   "windows_positive": 0.13043478260869565,
+   "n_windows": 23,
+   "n_trades": 7559,
+   "deflated": {
+    "sharpe": -1.409711985437147,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 1.4437842259390755e-09,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.00036507694748244806,
+      "sharpe_raw": -0.05343035288116237
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": -0.0003402051754162265,
+      "sharpe_raw": -0.023496567001573893
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": -0.0003471423587704088,
+      "sharpe_raw": -0.022756030778176083
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.00042176175347894925,
+      "sharpe_raw": -0.04649025104891498
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": -0.00020076754246813077,
+      "sharpe_raw": -0.014772180265894802
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -0.00036239605748857674
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -7.074858473967393e-05
+     }
+    },
+    "single_regime": false,
+    "dominant_share": 0.0,
+    "dominant": "bear"
+   },
+   "tripwire": {
+    "tripped": false,
+    "reason": ""
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  }
+ ]
+}

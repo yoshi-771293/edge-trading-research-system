@@ -1,0 +1,125 @@
+{
+ "as_of": "2026-09-18 11:01:27.054085+00:00",
+ "ladder": [
+  {
+   "rho": 0.0,
+   "theory": 0.0,
+   "paper": 0.25781236627996207,
+   "gross": -0.08650685202384945,
+   "net": -0.19524440322976802,
+   "psr": 0.0022248397064915724,
+   "trades": 5665,
+   "passes": false,
+   "trip": "",
+   "single_regime": true
+  },
+  {
+   "rho": 0.01,
+   "theory": 0.15243563130520604,
+   "paper": 0.5419363528461371,
+   "gross": 0.20367058217082604,
+   "net": 0.09708594230845727,
+   "psr": 0.014820869149210488,
+   "trades": 5637,
+   "passes": false,
+   "trip": "",
+   "single_regime": true
+  },
+  {
+   "rho": 0.02,
+   "theory": 0.3048712626104121,
+   "paper": 0.7085304532134108,
+   "gross": 0.3759098756723358,
+   "net": 0.2714288586016047,
+   "psr": 0.03790771860183147,
+   "trades": 5600,
+   "passes": false,
+   "trip": "",
+   "single_regime": true
+  },
+  {
+   "rho": 0.03,
+   "theory": 0.4573068939156182,
+   "paper": 1.0057515932500534,
+   "gross": 0.6739216040465171,
+   "net": 0.5697128055554748,
+   "psr": 0.13725411420354938,
+   "trades": 5573,
+   "passes": false,
+   "trip": "",
+   "single_regime": false
+  },
+  {
+   "rho": 0.04,
+   "theory": 0.6097425252208242,
+   "paper": 1.2771612508419978,
+   "gross": 0.944013776920537,
+   "net": 0.839327318205079,
+   "psr": 0.317032157348666,
+   "trades": 5559,
+   "passes": false,
+   "trip": "",
+   "single_regime": false
+  },
+  {
+   "rho": 0.06,
+   "theory": 0.9146137878312364,
+   "paper": 1.8546165171324076,
+   "gross": 1.5296659908710604,
+   "net": 1.42799843192565,
+   "psr": 0.8075575953982901,
+   "trades": 5539,
+   "passes": true,
+   "trip": "",
+   "single_regime": false
+  },
+  {
+   "rho": 0.08,
+   "theory": 1.2194850504416483,
+   "paper": 2.4704309235892725,
+   "gross": 2.1514232372160844,
+   "net": 2.0518082317567834,
+   "psr": 0.989009676029209,
+   "trades": 5625,
+   "passes": true,
+   "trip": "",
+   "single_regime": false
+  },
+  {
+   "rho": 0.12,
+   "theory": 1.8292275756624727,
+   "paper": 3.7259288996289097,
+   "gross": 3.408560463748321,
+   "net": 3.3098538778133895,
+   "psr": 0.9999998642188703,
+   "trades": 5889,
+   "passes": false,
+   "trip": "sharpe 3.31 > 3.0 sustained over the full sample (1911 days)",
+   "single_regime": false
+  },
+  {
+   "rho": 0.16,
+   "theory": 2.4389701008832967,
+   "paper": 5.166957155805768,
+   "gross": 4.860510654100409,
+   "net": 4.765795911821803,
+   "psr": 1.0,
+   "trades": 6344,
+   "passes": false,
+   "trip": "sharpe 4.77 > 3.0 sustained over the full sample (1911 days)",
+   "single_regime": false
+  }
+ ],
+ "floor": {
+  "rho": 0.06,
+  "theory": 0.9146137878312364,
+  "paper": 1.8546165171324076,
+  "gross": 1.5296659908710604,
+  "net": 1.42799843192565,
+  "psr": 0.8075575953982901,
+  "trades": 5539,
+  "passes": true,
+  "trip": "",
+  "single_regime": false
+ }
+}

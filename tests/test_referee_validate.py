@@ -61,9 +61,14 @@ def test_tripwire_single_day_bound_is_applied_on_daily_resample():
     assert "single" not in validate.tripwire(r, periods_per_year=8760).reason
 
 
-def test_tripwire_on_ten_straight_wins():
-    r = pd.Series(np.random.default_rng(0).normal(0, 0.01, 400), index=_daily_idx(400)); r.iloc[100:110] = 0.001
-    trip = validate.tripwire(r, periods_per_year=365)
+def test_tripwire_streak_threshold_scales_with_the_sample():
+    """A ten-day run is ordinary and must NOT trip: over 400 days a fair coin reaches it
+    often. What trips is a run beyond the surprising level for that sample length."""
+    r = pd.Series(np.random.default_rng(0).normal(0, 0.01, 400), index=_daily_idx(400))
+    r.iloc[100:110] = 0.001
+    assert "streak" not in validate.tripwire(r, periods_per_year=365).reason
+    r2 = r.copy(); r2.iloc[100:140] = 0.001          # forty in a row is not a market
+    trip = validate.tripwire(r2, periods_per_year=365)
     assert trip.tripped and "streak" in trip.reason
 
 
@@ -107,13 +112,13 @@ def test_single_day_and_streak_exempt_when_benchmark_did_the_same():
     held them is not a bug. Exempt when the benchmark's own daily returns show it."""
     idx = _daily_idx(400)
     b = pd.Series(np.random.default_rng(2).normal(0, 0.01, 400), index=idx)
-    b.iloc[50] = 0.20; b.iloc[100:112] = 0.005                          # a +20% day and a 12-day streak
+    b.iloc[50] = 0.20; b.iloc[100:145] = 0.005              # a +20% day and a 45-day streak
     r = 0.9 * b
     trip = validate.tripwire(r, periods_per_year=365, benchmark_returns=b)
     assert "single" not in trip.reason and "streak" not in trip.reason
-    r2 = r.copy(); r2.iloc[300] = 0.19                                    # a big day the benchmark did NOT have
+    r2 = r.copy(); r2.iloc[300] = 0.19                       # a big day the benchmark did NOT have
     assert "single" in validate.tripwire(r2, periods_per_year=365, benchmark_returns=b).reason
-    r3 = r.copy(); r3.iloc[200:211] = 0.002                               # a streak the benchmark did NOT have
+    r3 = r.copy(); r3.iloc[200:250] = 0.002                  # a streak the benchmark did NOT have
     assert "streak" in validate.tripwire(r3, periods_per_year=365, benchmark_returns=b).reason
 
 
@@ -121,7 +126,7 @@ def test_exemptions_accept_any_of_several_benchmarks():
     """benchmark_returns may be a DataFrame (BTC, ETH, 50/50): exempt if ANY column did it."""
     idx = _daily_idx(400)
     btc = pd.Series(np.random.default_rng(4).normal(0, 0.01, 400), index=idx)
-    eth = btc.copy(); eth.iloc[100:112] = 0.005; eth.iloc[50] = 0.2      # only ETH had the streak and the big day
+    eth = btc.copy(); eth.iloc[100:150] = 0.005; eth.iloc[50] = 0.2     # only ETH had the streak and the big day
     bench = pd.DataFrame({"BTC": btc, "ETH": eth, "5050": (btc + eth) / 2})
     r = 0.9 * eth
     trip = validate.tripwire(r, periods_per_year=365, benchmark_returns=bench)
