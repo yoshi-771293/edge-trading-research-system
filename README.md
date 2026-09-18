@@ -1,7 +1,39 @@
-# Edge Tournament
+# Edge Trading Research System
 
-Autonomous crypto trading research on this Mac. **Simulation only**: no exchange keys,
-no signing code, no order-submission path anywhere in this repository.
+A research harness whose job is to **disprove** trading edges, cheaply and with receipts.
+Across three days it tested 69 pre-registered strategy variants over two markets and
+twenty-one years, and rejected every one of them.
+
+**Simulation only.** There are no exchange credentials anywhere in this repository. The
+live order gateway exists but is interlocked off and has no withdrawal path.
+
+## The result
+
+| | Best net Sharpe | Eligible | Instrument's detection floor |
+|---|---|---|---|
+| Crypto, 30-coin point-in-time universe, 21 variants | +0.62 | 0 | +1.43 |
+| Forex, 10 majors 2005-2026, 15 variants | +0.01 | 0 | +1.43 |
+
+The detection floor is measured, not assumed: injecting an edge of known size shows this
+harness reliably sees anything from a net Sharpe of about +1.43 upward. Nothing tested
+came within half of that.
+
+The most informative single finding is that forex friction costs 0.025 of Sharpe against
+0.6 to 1.3 on crypto, and every strategy still loses. With costs effectively removed, the
+answer did not change, so the failure is the signals rather than the fees.
+
+## Start here
+
+- [docs/CALIBRATION_AND_FINAL.md](docs/CALIBRATION_AND_FINAL.md) — does the instrument
+  work at all, and the three defects that question exposed. **Read this first.**
+- [docs/FOREX_VERDICT.md](docs/FOREX_VERDICT.md) — the cleanest negative, with friction
+  near zero.
+- [docs/NARROWING.md](docs/NARROWING.md) — why searching fewer variants after the fact
+  turns 87 edgeless strategies into a "winner" 100% of the time.
+- [docs/REFEREE_PROOF.md](docs/REFEREE_PROOF.md) — every claim the simulator makes, and
+  the test that pins it, including eleven bugs it caught in its own construction.
+- [docs/PLATFORM_AND_TAX.md](docs/PLATFORM_AND_TAX.md) — measured venue costs, and why
+  German tax law rewards holding over trading.
 
 The account starts with $1,000 and receives $100 every month. Profit is account value
 minus everything paid in, never the raw balance. The benchmark is the same money, with
