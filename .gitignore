@@ -17,3 +17,4 @@ state/notify.json
 state/orders.log
 .env
 *.env
+state/*.pid
