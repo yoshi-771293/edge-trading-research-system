@@ -1,0 +1,43 @@
+{
+ "frozen_at": "2026-09-16 17:46:03.052761+00:00",
+ "score_from": "2026-09-17 00:00:00+00:00",
+ "history_is_invalid_for_this_set": true,
+ "selection_rule": "Two families with the strongest published prior (time-series trend, cross-sectional momentum); each takes the MIDDLE value of its grid by position, never its best performer; the 4-hour horizon is dropped because friction scales with trade count.",
+ "n_trials": 4,
+ "min_psr": 0.95,
+ "variants": [
+  {
+   "family": "trend_basket",
+   "bar": "1d",
+   "param": [
+    100,
+    5
+   ]
+  },
+  {
+   "family": "trend_basket",
+   "bar": "1w",
+   "param": [
+    100,
+    5
+   ]
+  },
+  {
+   "family": "xs_momentum",
+   "bar": "1d",
+   "param": [
+    60,
+    3
+   ]
+  },
+  {
+   "family": "xs_momentum",
+   "bar": "1w",
+   "param": [
+    60,
+    3
+   ]
+  }
+ ],
+ "note": "This set was narrowed after an 87-variant search, so its apparent confidence on historical data would be manufactured. Only data from score_from onward is admissible evidence about it."
+}

@@ -1,0 +1,2819 @@
+{
+ "as_of": "2026-09-16 13:08:57.734807+00:00",
+ "n_trials": 87,
+ "top_n": 30,
+ "universe_start": "2019-05-20 00:00:00+00:00",
+ "symbols_ever_selected": [
+  "1000SATSUSDT",
+  "AAVEUSDT",
+  "ACEUSDT",
+  "ACHUSDT",
+  "ADAUSDT",
+  "AGIXUSDT",
+  "AIXBTUSDT",
+  "AKROUSDT",
+  "ALGOUSDT",
+  "ALICEUSDT",
+  "ALLOUSDT",
+  "ALPHAUSDT",
+  "ALTUSDT",
+  "ANCUSDT",
+  "ANKRUSDT",
+  "APEUSDT",
+  "API3USDT",
+  "APTUSDT",
+  "ARBUSDT",
+  "ARKMUSDT",
+  "ARPAUSDT",
+  "ARUSDT",
+  "ASTERUSDT",
+  "ATOMUSDT",
+  "AUCTIONUSDT",
+  "AVAXUSDT",
+  "AXSUSDT",
+  "BAKEUSDT",
+  "BANANAS31USDT",
+  "BANDUSDT",
+  "BANKUSDT",
+  "BATUSDT",
+  "BCCUSDT",
+  "BCHABCUSDT",
+  "BCHSVUSDT",
+  "BCHUSDT",
+  "BELUSDT",
+  "BFUSDUSDT",
+  "BIOUSDT",
+  "BLZUSDT",
+  "BNBUSDT",
+  "BNXUSDT",
+  "BOMEUSDT",
+  "BONDUSDT",
+  "BONKUSDT",
+  "BTCUSDT",
+  "BTTUSDT",
+  "BURGERUSDT",
+  "CAKEUSDT",
+  "CELRUSDT",
+  "CFXUSDT",
+  "CHRUSDT",
+  "CHZUSDT",
+  "CKBUSDT",
+  "COMPUSDT",
+  "COTIUSDT",
+  "CRVUSDT",
+  "CVCUSDT",
+  "DARUSDT",
+  "DASHUSDT",
+  "DENTUSDT",
+  "DEXEUSDT",
+  "DOGEUSDT",
+  "DOTUSDT",
+  "DUSKUSDT",
+  "DYDXUSDT",
+  "EGLDUSDT",
+  "EIGENUSDT",
+  "ENAUSDT",
+  "ENJUSDT",
+  "ENSOUSDT",
+  "ENSUSDT",
+  "EOSUSDT",
+  "ERDUSDT",
+  "ETCUSDT",
+  "ETHFIUSDT",
+  "ETHUSDT",
+  "FETUSDT",
+  "FILUSDT",
+  "FLMUSDT",
+  "FLOKIUSDT",
+  "FLOWUSDT",
+  "FORMUSDT",
+  "FRONTUSDT",
+  "FTMUSDT",
+  "FTTUSDT",
+  "FUNUSDT",
+  "GALAUSDT",
+  "GASUSDT",
+  "GIGGLEUSDT",
+  "GMTUSDT",
+  "GRTUSDT",
+  "HBARUSDT",
+  "HIFIUSDT",
+  "HIGHUSDT",
+  "HOMEUSDT",
+  "HOOKUSDT",
+  "HOTUSDT",
+  "ICPUSDT",
+  "ICXUSDT",
+  "IDEXUSDT",
+  "IDUSDT",
+  "INJUSDT",
+  "IOSTUSDT",
+  "IOTAUSDT",
+  "IOTXUSDT",
+  "JASMYUSDT",
+  "JTOUSDT",
+  "JUPUSDT",
+  "KAITOUSDT",
+  "KAVAUSDT",
+  "KEYUSDT",
+  "KITEUSDT",
+  "KLAYUSDT",
+  "KNCUSDT",
+  "KSMUSDT",
+  "LAYERUSDT",
+  "LAZIOUSDT",
+  "LDOUSDT",
+  "LENDUSDT",
+  "LEVERUSDT",
+  "LINAUSDT",
+  "LINKUSDT",
+  "LOOMUSDT",
+  "LPTUSDT",
+  "LQTYUSDT",
+  "LRCUSDT",
+  "LTCUSDT",
+  "LUNAUSDT",
+  "LUNCUSDT",
+  "MAGICUSDT",
+  "MANAUSDT",
+  "MASKUSDT",
+  "MATICUSDT",
+  "MBLUSDT",
+  "MBOXUSDT",
+  "MDXUSDT",
+  "MINAUSDT",
+  "MKRUSDT",
+  "MOVRUSDT",
+  "MTLUSDT",
+  "NANOUSDT",
+  "NEARUSDT",
+  "NEIROUSDT",
+  "NEOUSDT",
+  "NOTUSDT",
+  "NPXSUSDT",
+  "NULSUSDT",
+  "OCEANUSDT",
+  "OGNUSDT",
+  "OGUSDT",
+  "OMGUSDT",
+  "OMUSDT",
+  "ONDOUSDT",
+  "ONEUSDT",
+  "ONGUSDT",
+  "ONTUSDT",
+  "OPUSDT",
+  "ORDIUSDT",
+  "PAXGUSDT",
+  "PENDLEUSDT",
+  "PENGUUSDT",
+  "PEOPLEUSDT",
+  "PEPEUSDT",
+  "PERPUSDT",
+  "PHAUSDT",
+  "PNUTUSDT",
+  "POLYXUSDT",
+  "PUMPUSDT",
+  "QNTUSDT",
+  "QTUMUSDT",
+  "RADUSDT",
+  "RAREUSDT",
+  "RAYUSDT",
+  "REEFUSDT",
+  "RENDERUSDT",
+  "RENUSDT",
+  "RLUSDUSDT",
+  "RNDRUSDT",
+  "ROSEUSDT",
+  "RSRUSDT",
+  "RUNEUSDT",
+  "RVNUSDT",
+  "SAGAUSDT",
+  "SANDUSDT",
+  "SANTOSUSDT",
+  "SEIUSDT",
+  "SHIBUSDT",
+  "SLPUSDT",
+  "SNXUSDT",
+  "SOLUSDT",
+  "SRMUSDT",
+  "STMXUSDT",
+  "STORJUSDT",
+  "STOUSDT",
+  "STPTUSDT",
+  "STRAXUSDT",
+  "STRKUSDT",
+  "STXUSDT",
+  "SUIUSDT",
+  "SUNUSDT",
+  "SUSDT",
+  "SUSHIUSDT",
+  "SXPUSDT",
+  "SYNUSDT",
+  "TAOUSDT",
+  "TFUELUSDT",
+  "THETAUSDT",
+  "TIAUSDT",
+  "TLMUSDT",
+  "TOMOUSDT",
+  "TONUSDT",
+  "TRBUSDT",
+  "TROYUSDT",
+  "TRUMPUSDT",
+  "TRUUSDT",
+  "TRXUSDT",
+  "TUTUSDT",
+  "TWTUSDT",
+  "UNIUSDT",
+  "USTCUSDT",
+  "USTUSDT",
+  "UUSDT",
+  "VETUSDT",
+  "VGXUSDT",
+  "VIRTUALUSDT",
+  "WAVESUSDT",
+  "WIFUSDT",
+  "WINUSDT",
+  "WLDUSDT",
+  "WLFIUSDT",
+  "WOOUSDT",
+  "WRXUSDT",
+  "XAUTUSDT",
+  "XEMUSDT",
+  "XLMUSDT",
+  "XMRUSDT",
+  "XPLUSDT",
+  "XRPUSDT",
+  "XTZUSDT",
+  "XVGUSDT",
+  "XVSUSDT",
+  "YFIIUSDT",
+  "YFIUSDT",
+  "YGGUSDT",
+  "ZECUSDT",
+  "ZENUSDT",
+  "ZILUSDT",
+  "ZKUSDT",
+  "ZROUSDT",
+  "ZRXUSDT"
+ ],
+ "shortlist": [
+  {
+   "family": "xs_momentum_gated",
+   "bar": "1d",
+   "param": [
+    20,
+    5,
+    100
+   ],
+   "eligible": false,
+   "rank_score": -0.9389467391673927,
+   "why": "TRIPWIRE: single day return 19.6% > 15% (benchmark did not); deflated: PSR 0.06 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": 0.3910040959171865,
+   "sharpe_gross": 0.7039883001517989,
+   "oos_net_ret": 0.2484686324102543,
+   "oos_gross_ret": 2.6536666112508684,
+   "oos_max_dd": -0.8960658621069147,
+   "windows_positive": 0.30434782608695654,
+   "n_windows": 23,
+   "n_trades": 3662,
+   "deflated": {
+    "sharpe": 0.39109753697382377,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.060662256736690144,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.0005020004700820809,
+      "sharpe_raw": -0.032917182624722104
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0017139702134646379,
+      "sharpe_raw": 0.03806178959813124
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": 0.0018648930141757526,
+      "sharpe_raw": 0.047824231013809816
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.0011940776654290784,
+      "sharpe_raw": -0.04151261236919762
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.00406555822789612,
+      "sharpe_raw": 0.09467495859980465
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": 0.0008060739424175737
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.0016509700315131576
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 19.6% > 15% (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     100
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "vol_target_trend",
+   "bar": "1d",
+   "param": [
+    200,
+    5,
+    20
+   ],
+   "eligible": false,
+   "rank_score": -0.9916654919093268,
+   "why": "TRIPWIRE: single day return 27.0% > 15% (benchmark did not); win streak 16 >= 10 days (benchmark did not); deflated: PSR 0.01 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": 0.03616025891738601,
+   "sharpe_gross": 0.5464196065380323,
+   "oos_net_ret": -0.8055605712657647,
+   "oos_gross_ret": 1.3707322035062943,
+   "oos_max_dd": -0.9903747482969181,
+   "windows_positive": 0.34782608695652173,
+   "n_windows": 23,
+   "n_trades": 5376,
+   "deflated": {
+    "sharpe": 0.03616890039412962,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.008298347831755731,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.0022251831626494594,
+      "sharpe_raw": -0.060706286258656414
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0019716420348135986,
+      "sharpe_raw": 0.043612222190110905
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": 0.0009421700367317844,
+      "sharpe_raw": 0.020760500907133432
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.0023947544069373014,
+      "sharpe_raw": -0.06005320219527488
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.004874426772358474,
+      "sharpe_raw": 0.11571338791710216
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": 0.0002352286130693209
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.0039633572163454665
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 27.0% > 15% (benchmark did not); win streak 16 >= 10 days (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "trend_basket",
+   "bar": "1d",
+   "param": [
+    200,
+    5
+   ],
+   "eligible": false,
+   "rank_score": -0.9946045257361594,
+   "why": "TRIPWIRE: single day return 29.4% > 15% (benchmark did not); net Sharpe <= 0; deflated: PSR 0.01 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -0.028014178690434707,
+   "sharpe_gross": 0.7578015453080046,
+   "oos_net_ret": -0.9252281972249968,
+   "oos_gross_ret": 3.3939489654855572,
+   "oos_max_dd": -0.9974216833801256,
+   "windows_positive": 0.34782608695652173,
+   "n_windows": 23,
+   "n_trades": 6430,
+   "deflated": {
+    "sharpe": -0.028020873439888728,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.00542348844253101,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.002905390137961463,
+      "sharpe_raw": -0.06920042087454216
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.00225766653887486,
+      "sharpe_raw": 0.04256016967898969
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": 0.0011481435555393369,
+      "sharpe_raw": 0.022334236696449454
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.003523646913239633,
+      "sharpe_raw": -0.07697258723424097
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.006612899687495811,
+      "sharpe_raw": 0.12930754339095007
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": -5.898594521645012e-05
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.0003817020186828268
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 29.4% > 15% (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     50,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     50,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_momentum",
+   "bar": "1d",
+   "param": [
+    60,
+    3
+   ],
+   "eligible": false,
+   "rank_score": -0.9984039242399505,
+   "why": "TRIPWIRE: single day return 28.8% > 15% (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -0.18297088658764588,
+   "sharpe_gross": 0.565230271015765,
+   "oos_net_ret": -0.9785200683347741,
+   "oos_gross_ret": 1.5010450965035909,
+   "oos_max_dd": -0.9992640952688563,
+   "windows_positive": 0.391304347826087,
+   "n_windows": 23,
+   "n_trades": 5299,
+   "deflated": {
+    "sharpe": -0.18301461245434436,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.0017790466466371983,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.0032653776112054403,
+      "sharpe_raw": -0.06838531044870047
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0017792503105798347,
+      "sharpe_raw": 0.03246454145150151
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": 0.00032615541655995933,
+      "sharpe_raw": 0.005707733341504996
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.0035347776276453092,
+      "sharpe_raw": -0.0741654445982451
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.005567673889133554,
+      "sharpe_raw": 0.09975069605597019
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": -0.0002977208726712662
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.005618593585757751
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 28.8% > 15% (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     20,
+     3
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "low_vol_trend",
+   "bar": "1d",
+   "param": [
+    200,
+    5,
+    20
+   ],
+   "eligible": false,
+   "rank_score": -0.9987331998910951,
+   "why": "TRIPWIRE: single day return 22.6% > 15% (benchmark did not); win streak 17 >= 10 days (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -0.203097820308225,
+   "sharpe_gross": 0.22795259126912346,
+   "oos_net_ret": -0.8637545756282342,
+   "oos_gross_ret": 0.03422238442600678,
+   "oos_max_dd": -0.9676883722540622,
+   "windows_positive": 0.34782608695652173,
+   "n_windows": 23,
+   "n_trades": 4154,
+   "deflated": {
+    "sharpe": -0.203146356052808,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.0014698979292131847,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.0018468699189146441,
+      "sharpe_raw": -0.05333570266527929
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0008581246433257602,
+      "sharpe_raw": 0.02559899286483659
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": -0.001399001778540939,
+      "sharpe_raw": -0.03060174992959359
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.0020252481948315314,
+      "sharpe_raw": -0.07296311359791614
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.004030178659037818,
+      "sharpe_raw": 0.11102128110600129
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": -0.00031213193592993994
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.0016476171458371346
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 22.6% > 15% (benchmark did not); win streak 17 >= 10 days (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     50,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "breakout",
+   "bar": "4h",
+   "param": [
+    100,
+    5
+   ],
+   "eligible": false,
+   "rank_score": -0.9990627702120232,
+   "why": "TRIPWIRE: single day return 19.5% > 15% (benchmark did not); win streak 13 >= 10 days (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -0.23480638518522398,
+   "sharpe_gross": 0.7514478467278767,
+   "oos_net_ret": -0.9162128895251043,
+   "oos_gross_ret": 2.546293888787425,
+   "oos_max_dd": -0.9914247732998207,
+   "windows_positive": 0.30434782608695654,
+   "n_windows": 23,
+   "n_trades": 12793,
+   "deflated": {
+    "sharpe": -0.2348158210342577,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 0.001172036173162057,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.00024288858844435596,
+      "sharpe_raw": -0.01895379095423389
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": 5.757318961260706e-05,
+      "sharpe_raw": 0.0032955863742758977
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": -0.00013555977036668884,
+      "sharpe_raw": -0.007324797402489817
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0004179018936763178,
+      "sharpe_raw": -0.03125479088007405
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.0007060860862870172,
+      "sharpe_raw": 0.040362065476904165
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -6.941093923856778e-05
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.000297464158718528
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 19.5% > 15% (benchmark did not); win streak 13 >= 10 days (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "breakout",
+   "bar": "1d",
+   "param": [
+    100,
+    5
+   ],
+   "eligible": false,
+   "rank_score": -0.999117923335135,
+   "why": "TRIPWIRE: single day return 25.2% > 15% (benchmark did not); win streak 12 >= 10 days (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -0.2414938943234718,
+   "sharpe_gross": 0.29646639202373726,
+   "oos_net_ret": -0.9356691190430805,
+   "oos_gross_ret": 0.12639118618424106,
+   "oos_max_dd": -0.9925202715080393,
+   "windows_positive": 0.30434782608695654,
+   "n_windows": 23,
+   "n_trades": 4302,
+   "deflated": {
+    "sharpe": -0.24155160585358795,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 0.001123570559188411,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.002453635112133377,
+      "sharpe_raw": -0.07055696079500831
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": 0.0010933538843920611,
+      "sharpe_raw": 0.024912746652721175
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": -5.540418510263167e-05,
+      "sharpe_raw": -0.0013628022328746158
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.003302051907258415,
+      "sharpe_raw": -0.08616332482199174
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.005292379286110372,
+      "sharpe_raw": 0.12387546397395383
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": -0.0003680996693232104
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.004080091012835389
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 25.2% > 15% (benchmark did not); win streak 12 >= 10 days (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     55,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     55,
+     3
+    ],
+    [
+     20,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     55,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_momentum_gated",
+   "bar": "4h",
+   "param": [
+    60,
+    3,
+    200
+   ],
+   "eligible": false,
+   "rank_score": -0.9998913433509418,
+   "why": "TRIPWIRE: single day return 21.7% > 15% (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -0.35092896619971425,
+   "sharpe_gross": 0.8318899072869776,
+   "oos_net_ret": -0.9638050850287847,
+   "oos_gross_ret": 2.4578830806575316,
+   "oos_max_dd": -0.995978686756712,
+   "windows_positive": 0.21739130434782608,
+   "n_windows": 23,
+   "n_trades": 11182,
+   "deflated": {
+    "sharpe": -0.35094306851104623,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 0.0004595856152579769,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.0004605946932220881,
+      "sharpe_raw": -0.041941172753947584
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": 0.00014926184235700723,
+      "sharpe_raw": 0.007333554276222662
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": 0.00012069567394933377,
+      "sharpe_raw": 0.006620025518560199
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.00041492917661912175,
+      "sharpe_raw": -0.029082919250978907
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.000329501536306359,
+      "sharpe_raw": 0.01614423587319493
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -0.000149956409182771
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": 0.0004898686189548768
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 21.7% > 15% (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ],
+    [
+     60,
+     5,
+     100
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     120,
+     5,
+     200
+    ],
+    [
+     60,
+     3,
+     200
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "trend_basket",
+   "bar": "4h",
+   "param": [
+    200,
+    5
+   ],
+   "eligible": false,
+   "rank_score": -1.0004810252364384,
+   "why": "TRIPWIRE: single day return 37.9% > 15% (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -0.5541626619632192,
+   "sharpe_gross": 1.0006073139203848,
+   "oos_net_ret": -0.9968718024809751,
+   "oos_gross_ret": 5.159698620498358,
+   "oos_max_dd": -0.999842813501333,
+   "windows_positive": 0.2608695652173913,
+   "n_windows": 23,
+   "n_trades": 16810,
+   "deflated": {
+    "sharpe": -0.5541849313542935,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 7.313742552487655e-05,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.0007151711763646189,
+      "sharpe_raw": -0.039734249290077
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": 0.00013853578575851667,
+      "sharpe_raw": 0.006052963975739318
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": -0.0003434000187610427,
+      "sharpe_raw": -0.014831057654504178
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0006142658587258371,
+      "sharpe_raw": -0.03409396320138169
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.0006260335130609449,
+      "sharpe_raw": 0.02558881450535543
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -0.000251035271028106
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.00013410840300104855
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 37.9% > 15% (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     100,
+     3
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ],
+    [
+     200,
+     5
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_reversal",
+   "bar": "1d",
+   "param": [
+    5,
+    5,
+    100
+   ],
+   "eligible": false,
+   "rank_score": -1.0005776876993764,
+   "why": "TRIPWIRE: single day return 37.7% > 15% (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -0.6187924253677899,
+   "sharpe_gross": -0.13584225360601837,
+   "oos_net_ret": -0.9571693925671455,
+   "oos_gross_ret": -0.4178731433569556,
+   "oos_max_dd": -0.9734380404782912,
+   "windows_positive": 0.08695652173913043,
+   "n_windows": 23,
+   "n_trades": 3029,
+   "deflated": {
+    "sharpe": -0.6189403026372848,
+    "expected_max_sharpe": 1.0364046158104723,
+    "psr": 4.11047259913398e-05,
+    "n": 2093
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 944,
+      "mean": -0.0007028295733706318,
+      "sharpe_raw": -0.030569189702502185
+     },
+     "trend:bull": {
+      "n": 1149,
+      "mean": -0.001263646034078211,
+      "sharpe_raw": -0.03451864868293619
+     },
+     "vol:high": {
+      "n": 386,
+      "mean": -0.0013109038186915826,
+      "sharpe_raw": -0.026614209305948242
+     },
+     "vol:low": {
+      "n": 1172,
+      "mean": -0.0019037923185619497,
+      "sharpe_raw": -0.08028290644545281
+     },
+     "vol:mid": {
+      "n": 535,
+      "mean": 0.0011623421700033935,
+      "sharpe_raw": 0.04044475256201257
+     },
+     "chop:False": {
+      "n": 2015,
+      "mean": -0.0009744440291472289
+     },
+     "chop:True": {
+      "n": 78,
+      "mean": -0.0019473806626419826
+     }
+    },
+    "single_regime": false,
+    "dominant": "bear"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 37.7% > 15% (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     5,
+     3,
+     200
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     10,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ],
+    [
+     5,
+     5,
+     100
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_momentum",
+   "bar": "4h",
+   "param": [
+    120,
+    5
+   ],
+   "eligible": false,
+   "rank_score": -1.000830780979679,
+   "why": "TRIPWIRE: single day return 28.2% > 15% (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -0.8347943203529045,
+   "sharpe_gross": 0.9307736446157392,
+   "oos_net_ret": -0.9993472290103917,
+   "oos_gross_ret": 4.166113501599732,
+   "oos_max_dd": -0.9999679844567284,
+   "windows_positive": 0.2608695652173913,
+   "n_windows": 23,
+   "n_trades": 16401,
+   "deflated": {
+    "sharpe": -0.834827867111758,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 4.0133406738330355e-06,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.0007421348579164884,
+      "sharpe_raw": -0.04023301626756293
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": -6.754556360429067e-05,
+      "sharpe_raw": -0.0029847526518857496
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": -0.00024020396472987382,
+      "sharpe_raw": -0.010442730254652774
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0008161213222696435,
+      "sharpe_raw": -0.04358179854161738
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.0005047929016350882,
+      "sharpe_raw": 0.021528371317049544
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -0.0003539706981499285
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.0008308005039561389
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 28.2% > 15% (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     60,
+     5
+    ],
+    [
+     60,
+     3
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ],
+    [
+     120,
+     5
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "vol_target_trend",
+   "bar": "4h",
+   "param": [
+    200,
+    5,
+    20
+   ],
+   "eligible": false,
+   "rank_score": -1.000892440605112,
+   "why": "TRIPWIRE: single day return 37.0% > 15% (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -0.8945372913526319,
+   "sharpe_gross": 1.013371910497691,
+   "oos_net_ret": -0.99741675737316,
+   "oos_gross_ret": 3.4971892101427455,
+   "oos_max_dd": -0.9997994603492775,
+   "windows_positive": 0.17391304347826086,
+   "n_windows": 23,
+   "n_trades": 18440,
+   "deflated": {
+    "sharpe": -0.8945732389220714,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 2.0966862405201386e-06,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.0006792833692483899,
+      "sharpe_raw": -0.044305925302561354
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": -4.280046929973825e-05,
+      "sharpe_raw": -0.0022891988487973
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": -0.0004643170974836889,
+      "sharpe_raw": -0.02325252107760955
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0006852532296146539,
+      "sharpe_raw": -0.04486475979299184
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.0005426055098511872,
+      "sharpe_raw": 0.02834323399904527
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -0.0003242243009948594
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.0004769128961430164
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 37.0% > 15% (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "low_vol_trend",
+   "bar": "4h",
+   "param": [
+    200,
+    5,
+    20
+   ],
+   "eligible": false,
+   "rank_score": -1.0016667726357973,
+   "why": "TRIPWIRE: single day return 16.4% > 15% (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -1.6667726826958447,
+   "sharpe_gross": 0.8664798290816316,
+   "oos_net_ret": -0.9991131136383964,
+   "oos_gross_ret": 0.8415774170792003,
+   "oos_max_dd": -0.9996436385047429,
+   "windows_positive": 0.17391304347826086,
+   "n_windows": 23,
+   "n_trades": 11404,
+   "deflated": {
+    "sharpe": -1.6668396630524267,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 4.6898554496862934e-11,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.000683546023871109,
+      "sharpe_raw": -0.05423495423425714
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": -0.00030401549329902883,
+      "sharpe_raw": -0.02183861776087434
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": -0.0006003919348792632,
+      "sharpe_raw": -0.036660361847635214
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0007803580575327998,
+      "sharpe_raw": -0.06931773615294338
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": 0.00028106620652877933,
+      "sharpe_raw": 0.018734537511321623
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -0.0004653339334533669
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.0007290071124944546
+     }
+    },
+    "single_regime": false,
+    "dominant": "bull"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 16.4% > 15% (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     100,
+     3,
+     30
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ],
+    [
+     200,
+     5,
+     20
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  },
+  {
+   "family": "xs_reversal",
+   "bar": "4h",
+   "param": [
+    20,
+    5,
+    200
+   ],
+   "eligible": false,
+   "rank_score": -1.0028814823487129,
+   "why": "TRIPWIRE: single day return 16.7% > 15% (benchmark did not); net Sharpe <= 0; deflated: PSR 0.00 < 0.5 (expected max noise Sharpe 1.04)",
+   "sharpe_net": -2.8814823487129337,
+   "sharpe_gross": -0.19278279344696977,
+   "oos_net_ret": -0.999939497234874,
+   "oos_gross_ret": -0.0939389646141986,
+   "oos_max_dd": -0.9999418345685832,
+   "windows_positive": 0.043478260869565216,
+   "n_windows": 23,
+   "n_trades": 11005,
+   "deflated": {
+    "sharpe": -2.8815981429764257,
+    "expected_max_sharpe": 1.0409759723608054,
+    "psr": 7.201088771657466e-22,
+    "n": 12443
+   },
+   "regime": {
+    "cells": {
+     "trend:bear": {
+      "n": 5614,
+      "mean": -0.0005951470351190396,
+      "sharpe_raw": -0.08366433112038082
+     },
+     "trend:bull": {
+      "n": 6829,
+      "mean": -0.0008092465507548942,
+      "sharpe_raw": -0.056871162348409825
+     },
+     "vol:high": {
+      "n": 2281,
+      "mean": -0.000556255169338673,
+      "sharpe_raw": -0.038119691149302054
+     },
+     "vol:low": {
+      "n": 6972,
+      "mean": -0.0008217422436208313,
+      "sharpe_raw": -0.0868929842318327
+     },
+     "vol:mid": {
+      "n": 3190,
+      "mean": -0.000586048647798593,
+      "sharpe_raw": -0.04432150480079637
+     },
+     "chop:False": {
+      "n": 11975,
+      "mean": -0.0007353522071338885
+     },
+     "chop:True": {
+      "n": 468,
+      "mean": -0.0001317467304169781
+     }
+    },
+    "single_regime": false,
+    "dominant": "bear"
+   },
+   "tripwire": {
+    "tripped": true,
+    "reason": "single day return 16.7% > 15% (benchmark did not)"
+   },
+   "causality": {
+    "passed": true
+   },
+   "chosen_params": [
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ],
+    [
+     20,
+     5,
+     200
+    ]
+   ],
+   "oos_index": [
+    "2020-12-05 00:00:00+00:00",
+    "2026-08-28 00:00:00+00:00"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+# virtualenv and caches
+.venv/
+__pycache__/
+*.pyc
+
+# market data caches: large and fully regenerable from the public feeds
+state/bars/
+state/fx/
+
+# live/mutable state: a database, logs, and the generated dashboard
+state/*.sqlite*
+state/*.log
+state/dashboard.html
+
+# anything that could carry a secret. Credentials live in the environment only.
+state/notify.json
+state/orders.log
+.env
+*.env

@@ -1,0 +1,27 @@
+{
+ "frozen_at": "2026-09-17 10:22:19.656121+00:00",
+ "score_from": "2026-09-18 00:00:00+00:00",
+ "history_is_invalid_for_this_set": true,
+ "selection_rule": "Trend-pullback-engulfing with a stop and a 2:1 target, ported from the MT5 tutorial and tested 2026-09-17. Three risk levels at the only venue an EU resident may use. Chosen AFTER seeing the historical test, so history is inadmissible for this set: it failed the trade-count and multi-regime gates there, and traded only 7% of the days.",
+ "n_trials": 3,
+ "min_psr": 0.95,
+ "min_trades": 100,
+ "variants": [
+  {
+   "venue": "okx",
+   "risk_frac": 0.02,
+   "grid_index": 2
+  },
+  {
+   "venue": "okx",
+   "risk_frac": 0.05,
+   "grid_index": 2
+  },
+  {
+   "venue": "okx",
+   "risk_frac": 0.01,
+   "grid_index": 0
+  }
+ ],
+ "note": "Judge the DRAWDOWN behaviour as well as the return. The historical test suggested the stop mechanism is worth keeping even though the signal is not."
+}
